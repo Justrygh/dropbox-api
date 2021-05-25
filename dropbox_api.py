@@ -84,7 +84,7 @@ def handler(dbx: Dropbox, filename: str):
     client_path = join(clients_directory, client_name)
     date_path = join(client_path, date)
 
-    # check dir existance
+    # check dir existence
     if not exists(clients_directory):
         mkdir(clients_directory)
         log.info("{}: Clients directory was created".format(datetime.now()))
